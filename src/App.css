@@ -1,0 +1,162 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#root {
+  background: skyblue;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.calculator--container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 360px;
+  background: whitesmoke;
+  border-radius: 2%
+}
+
+.screen--container {
+  flex: 0.5;
+  flex: 0.5 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen-bottom {
+  text-align: right;
+  color: skyblue;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.screen-top {
+  text-align: right;
+  color: purple;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+.screen-bottom {
+  flex: 2;
+  font-size: 80px;
+  width: 80%;
+  align-self: flex-end;
+  margin-right: 8px;
+}
+
+.keypad {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.block {
+  flex: 1;
+  display: flex;
+}
+
+.btn {
+
+  border-radius: 50%;
+  margin: 10px;
+  border: none;
+  background: white;
+  color: skyblue;
+
+  outline: none;
+  cursor: pointer;
+   font-size: xx-large;
+  box-shadow: 0 6px 6px -6px grey;
+  min-width: 65px;
+    height: 65px;
+
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: 2em;
+}
+
+.btn--equals {
+  flex: 2;
+  border-radius: 95px/80px;
+  align-items: end;
+  display: flex;
+  padding-left: 30px;
+  justify-content: center;
+  box-shadow: 0 12px 6px -6px lightblue;
+}
+
+.btn--orange {
+  background: skyblue;
+  color: white;
+  box-shadow: 0 12px 6px -6px lightblue;
+}
+
+.btn--grey {
+  background: white;
+  color: skyblue;
+}
+
+@media all and (max-width: 530px) {
+  .btn {
+    font-size: 32px;
+  }
+
+  .calculator--container {
+    width: 420px;
+  }
+
+  .btn--zero {
+    padding-left: 40px
+  }
+
+  .keypad {
+    flex: 0.6 0.5;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .btn {
+    font-size: 25px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .calculator--container{
+    /* height: 70vh; */
+    width: 315px;
+  }
+}
